@@ -1,6 +1,5 @@
 ﻿using Library.libraryModel.models;
 using System;
-using System.Collections.Generic;
 
 namespace Library
 {
@@ -22,19 +21,19 @@ namespace Library
         public string Author
         {
             get { return author; }
-            set { value = author; }
+            set { author = value; }
         }
 
         public int Pages
         {
             get { return pages; }
-            set { value = pages; }
+            set { pages = value; }
         }
 
         public string Isbn
         {
             get { return isbn; }
-            set { value = isbn; }
+            set { isbn = value; }
         }
 
         public override bool Equals(object obj)

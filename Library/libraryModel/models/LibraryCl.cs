@@ -6,8 +6,8 @@ namespace Library.libraryModel.models
 {
     public class LibraryCl
     {
-        private Dictionary<string, Publication> _publications = new Dictionary<string, Publication>();
-        private Dictionary<string, LibraryUser> _users = new Dictionary<string, LibraryUser>();
+        private readonly Dictionary<string, Publication> _publications = new Dictionary<string, Publication>();
+        private readonly Dictionary<string, LibraryUser> _users = new Dictionary<string, LibraryUser>();
 
         public Dictionary<string, Publication> Publications { get { return _publications; } }
 

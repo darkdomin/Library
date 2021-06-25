@@ -5,8 +5,8 @@ namespace Library.libraryModel.models
 {
     public class LibraryUser : User
     {
-        private List<Publication> _publicationHistory = new List<Publication>(10);
-        private List<Publication> _borrowedPublication = new List<Publication>(10);
+        private readonly List<Publication> _publicationHistory = new List<Publication>(10);
+        private readonly List<Publication> _borrowedPublication = new List<Publication>(10);
         public LibraryUser(string firstName, string lastName, string pesel) : base(firstName, lastName, pesel)
         {
 
@@ -20,7 +20,7 @@ namespace Library.libraryModel.models
             _publicationHistory.Add(publication);
         }
 
-        public void borrowPublication(Publication publication)
+        public void BorrowPublication(Publication publication)
         {
             _borrowedPublication.Add(publication);
         }

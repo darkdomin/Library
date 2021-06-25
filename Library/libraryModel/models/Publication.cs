@@ -19,19 +19,19 @@ namespace Library.libraryModel.models
         public string Title
         {
             get { return title; }
-            set { value = title; }
+            set { title = value; }
         }
 
         public int ReleaseDate
         {
             get { return releaseDate; }
-            set { value = releaseDate; }
+            set { releaseDate = value; }
         }
 
         public string Publisher
         {
             get { return publisher; }
-            set { value = publisher; }
+            set { publisher = value; }
         }
 
         public  override string ToString()

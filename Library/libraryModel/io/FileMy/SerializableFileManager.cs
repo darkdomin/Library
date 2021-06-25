@@ -52,7 +52,7 @@ namespace Library.libraryModel.io.FileMy
                     {
                         zwrot = (Publication[])formatter.Deserialize(stream);
                     }
-                    catch (Exception e)
+                    catch (Exception)
                     {
                         break;
                     }
